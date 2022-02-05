@@ -4,7 +4,7 @@
 //первый элемент хранит имя контакта, второй — номер телефона/email.
 
 //создание массива можно так:
-Console.WriteLine("Телефоный справлчник Вариант 1:");
+Console.WriteLine("Телефоный справочник Вариант 1:");
 Console.WriteLine("Имя:  Номер телефона (или E-mail):");
 string[,] phoneBook =
 {
@@ -15,7 +15,7 @@ string[,] phoneBook =
     {"Tolya", "+5(678)901-23-45"},
 };
 
-//Вывод телефонного справочника #1
+//Вывод телефонного справочника #1:
 for (int i = 0; i < phoneBook.GetLength(0); i++)
 {
     for (int j = 0; j < phoneBook.GetLength(1); j++)
@@ -25,10 +25,11 @@ for (int i = 0; i < phoneBook.GetLength(0); i++)
     Console.WriteLine();
 }
 Console.WriteLine();
-Console.WriteLine("Телефоный справлчник Вариант 2:");
-Console.WriteLine("Имя:  Номер телефона:");
+Console.WriteLine("Телефоный справочник Вариант 2:");
+Console.WriteLine("Имя:  Номер телефона (или E-mail):");
 
 //Второй вариант вывода сравочника:
+//на мой взгляд первый проще.
 string[,] phoneBook2 = new string[5, 2];
 phoneBook2[0, 0] = "Kolya";
 phoneBook2[0, 1] = "+1(234)567-89-01";

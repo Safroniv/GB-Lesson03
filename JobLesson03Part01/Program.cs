@@ -26,7 +26,7 @@ Console.Write(twoLinesMassive[2,2] + " ");
 Console.Write(twoLinesMassive[3,3] + " ");
 Console.Write(twoLinesMassive[4,4] + " \n\n");
 
-//Вывод элементов главной диагонали через цикл:
+//Вывод элементов главной диагонали через цикл (нет ограничения для количества элементов):
 for (int i = 0; i < twoLinesMassive.GetLength(0); i++)
 {
     Console.Write(twoLinesMassive[i, i] + " ");
@@ -34,7 +34,7 @@ for (int i = 0; i < twoLinesMassive.GetLength(0); i++)
 }
 Console.WriteLine("\n");
 
-//Вывод элементов второстепенной диагонали через цикл:
+//Вывод элементов второстепенной диагонали через цикл (нет ограничения для количества элементов):
 for (int j = twoLinesMassive.GetLength(0)-1, i=0 ; j>=0 ; i++, j--)
 {
     Console.Write(twoLinesMassive[i, j] + " ");
@@ -42,7 +42,7 @@ for (int j = twoLinesMassive.GetLength(0)-1, i=0 ; j>=0 ; i++, j--)
 }
 Console.WriteLine("\n");
 
-// Вывод всех элементов массива по диагонали:
+// Вывод всех элементов массива по диагонали (сделан новый массив с последовательными числами):
 int diagonal = 0;
 int[,] massive = new int[3, 3];
 for (int i = 0; i < massive.GetLength(0); i++)
