@@ -3,7 +3,7 @@
 //string userString = Convert.ToString(Console.ReadLine());
 
 
-string stringReverse = Console.ReadLine();
+string stringReverse = Convert.ToString(Console.ReadLine());
 //разворот строки через reverce:
 static string ReverseString(string stringToReverce)
 {
